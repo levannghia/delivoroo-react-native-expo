@@ -33,9 +33,11 @@ const HomeScreen = () => {
         })
     }, [])
 
-    console.log(FeaturedCategories);
     return (
         <SafeAreaView className="bg-white pb-5">
+            <StatusBar
+                backgroundColor="#ffffff"
+                barStyle="dark-content"/>
             <View style={{ marginTop: statusBarHeight, marginHorizontal: 16 }}>
                 <View className="flex-row pb-3 items-center space-x-2">
                     <Image source={{
@@ -61,7 +63,7 @@ const HomeScreen = () => {
             </View>
 
             <ScrollView class="bg-gray-50" contentContainerStyle={{
-                paddingBottom: 100
+                paddingBottom: 100.
             }}>
                 <Categories />
                 {FeaturedCategories?.map(category => (

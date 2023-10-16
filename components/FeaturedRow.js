@@ -12,6 +12,7 @@ const FeaturedRow = ({ id, title, description, FeaturedCategory }) => {
       restaurants[] -> {
         ...,
         dishes[] -> {
+          ...,
           type -> {
             name
           }
@@ -23,7 +24,7 @@ const FeaturedRow = ({ id, title, description, FeaturedCategory }) => {
   }, [])
 
   return (
-    <View>
+    <View className="mb-4">
       <View className="flex-row justify-between items-center px-4 mt-4">
         <Text className="font-bold text-lg">{title}</Text>
         <ArrowRightIcon color="#00CCBB" />
