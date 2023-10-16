@@ -25,7 +25,11 @@ const DishRow = ({ id, name, short_description, price, image }) => {
             </View>
         </TouchableOpacity>
         {isPressed && (
-            <View></View>
+            <View>
+                <View>
+                    <TouchableOpacity></TouchableOpacity>
+                </View>
+            </View>
         )}
         </>
     )
