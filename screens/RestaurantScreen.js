@@ -41,7 +41,7 @@ const RestaurantScreen = () => {
       headerShown: false
     })
   }, [])
-  console.log(dishes);
+  // console.log(dishes);
   return (
     <>
       <BasketIcon />
